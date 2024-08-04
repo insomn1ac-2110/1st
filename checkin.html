@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>LetgoNow - Checkin</title>
+    <link href="./assets/icon/logo-1.svg" rel="shortcut icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/b766ee5834.js" crossorigin="anonymous"></script>
+  </head>
+
+<body>
+  <!-- ***** Header Area Start ***** -->
+  <div class="header-sticky">
+    <ul id="nav">
+        <li><a href="./index.html"><img src="./assets/icon/logo 4.png" alt=""></a></li>
+        <li><a href="./index.html">Địa điểm</a></li>
+        <li><a href="./tour.html">Tour</a></li>
+        <li class="Highlight"><a href="./checkin.html">Check-in</a></li>
+    </ul>
+  </div>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="checkin-banner">
+    <div class="banner">
+      <div>
+        <h5>Bắt đầu một hành trình mới</h5>
+        <i class="fa-solid fa-plane-departure"></i>
+        <h1>Đặt vé nào !</h1>
+        <a href="#checkin-area" class="checkin-btn">Check-in</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="checkin-form" id="checkin-area">
+    <div id="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.096261484541!2d105.801944014763!3d21.03813258599344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab5756f91077%3A0x576917442d674bfd!2sWest%20Lake!5e0!3m2!1sen!2svn!4v1642869952544"
+        width="100%"
+        height="450px"
+        frameborder="0"
+        style="border:0; border-top-left-radius: 23px; border-top-right-radius: 23px;"
+        allowfullscreen="">
+      </iframe>
+    </div>    
+    <div class="container">
+      <h1 class="content">
+         Đặt lịch ngay !
+      </h1>
+      <form id="check-in-form" action="#">
+         <div class="form-row">
+            <div class="input-data">
+               <input type="text" required>
+               <div class="underline"></div>
+               <label for="">Họ</label>
+            </div>
+            <div class="input-data">
+               <input type="text" required>
+               <div class="underline"></div>
+               <label for="">Tên</label>
+            </div>
+         </div>
+         <div class="form-row">
+            <div class="input-data">
+               <input type="text" required>
+               <div class="underline"></div>
+               <label for="">Email</label>
+            </div>
+            <div class="input-data">
+               <input type="text" required>
+               <div class="underline"></div>
+               <label for="">Số điện thoại</label>
+            </div>
+         </div>
+         <div class="form-row">
+            <div class="input-data">
+              <input type="text" required>
+               <div class="underline"></div>
+               <label for="">Số người</label>
+            </div>
+            <div class="input-data">
+              <input type="date" name="date" class="date" required>
+               <div class="underline"></div>
+            </div>
+          </div>
+          <div class="form-row submit-btn">
+            <div class="input-data">
+                <div class="inner"></div>
+                <input type="submit" value="submit" class="checkin-success">
+            </div>
+          </div>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2036 <a href="#">WoOx Travel</a> Company. All rights reserved. 
+          <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="./assets/js/custom.js"></script>
+  <script>
+    document.getElementById('check-in-form').onsubmit = function(event) {
+    event.preventDefault();
+    alert('Check-in thành công');
+    }
+  </script>
+
+  </body>
+
+</html>
